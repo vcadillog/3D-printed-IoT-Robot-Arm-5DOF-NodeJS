@@ -45,7 +45,12 @@ Default pins for Servo Motors and PCA9685 are [1,3,4,7,8], modify if you need in
 * [5] Comment back the Update_Values after setting the values and upload the program to the ESP8266-01s.
 
 ### NodeJS code
-* [1] Unzip arm-fronted.rar
+* You have to need installed ffmpeg
+* [1] Change directory in terminal to code/arm-frontend and install modules with:
+  * Run npm init
+  * Run npm install express
+  * Run npm install node-matrix
+  * Run npm install node-rtsp-stream  
 * [2] Open the code inside code/arm-frontend/app.js
 * [3] As the same done on the arduino code, modify your hostname with the IP of your computer and the PORT of your choice.
 * [4] The IP camera use a RTSP protocol, it can't be showed in the template directly, since that modify with the RTSP direction of your IP camera, if you have an HTTP url, can be done directly modying the index.html template. The WS port for the IP camera has to be different than the PORT declared for your webserver.
