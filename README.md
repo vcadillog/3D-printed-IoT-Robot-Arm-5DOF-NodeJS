@@ -23,16 +23,21 @@ Fully developed Robot Arm with a web app for a educational purpose in robotics a
 ## ASSEMBLY
 
 For the first 2 degrees of freedom, use 4 bolts to hold each MG996R Servo motor and 4 bolts for the PCA9685.
+
 In the image the bigger hole is to hold the PCA9685 and the small for the Servo Motor MG996R.
+
 ![alt text](https://github.com/vcadillog/3D-printed-IoT-Robot-Arm-5DOF-NodeJS/blob/master/images/ARM-3.PNG)
 
 The next 3 DOF can be assembled without screws only using pressure to hold the servo motors to the body.
+
 The gripper consist of 2 pieces, one connected and holded to the servo motor and another guided by the movement and connected to the body not too tight.
 
 ## CONNECTIONS
 
 The wire connection is made between the ESP8266 and the PCA9685 as the following image.
+
 Default pins for Servo Motors and PCA9685 are [1,3,4,7,8], modify if you need in the arduino code.
+
 ![alt text](https://github.com/vcadillog/3D-printed-IoT-Robot-Arm-5DOF-NodeJS/blob/master/images/5DOF-ARM-SCHEMATIC.png)
 
 ## HOW TO USE
@@ -53,7 +58,9 @@ Default pins for Servo Motors and PCA9685 are [1,3,4,7,8], modify if you need in
   * Run npm install node-rtsp-stream  
 * [2] Open the code inside code/arm-frontend/app.js
 * [3] As the same done on the arduino code, modify your hostname with the IP of your computer and the PORT of your choice.
-* [4] The IP camera use a RTSP protocol, it can't be showed in the template directly, since that modify with the RTSP direction of your IP camera, if you have an HTTP url, can be done directly modying the index.html template. The WS port for the IP camera has to be different than the PORT declared for your webserver.
+* [4] The IP camera use a RTSP protocol, it can't be showed in the template directly, since that modify with the RTSP direction of your IP camera, if you have an HTTP url, can be done directly modying the index.html template.
+
+The WS port for the IP camera has to be different than the PORT declared for your webserver.
 
 ### Template
 * [1] Open the code inside code/arm-frontend/client/index.html
@@ -68,7 +75,9 @@ node app.js
 ![alt text](https://github.com/vcadillog/3D-printed-IoT-Robot-Arm-5DOF-NodeJS/blob/master/images/WEB-INTERFACE.PNG)
 
 To move the Arm, use the keyboard Q,E to move the Z-axis, W,S to the Y-axis and A,D for the Z-axis; for the gripper O for open and P for close.
+
 If the arm is moved outside the boundaries it will show invalid position since the Inverse Kinematics isn't posible to be calculated, and you have to move back to a position that is allowed.
+
 The initial position is set as a extended arm.
 
 
