@@ -15,6 +15,6 @@
     "node-matrix": "^1.0.0",
     "node-rtsp-stream": "0.0.9",
     "rtsp-ffmpeg": "0.0.14",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   }
 }
