@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.3",
+    "express": "^4.19.2",
     "ffmpeg": "0.0.4",
     "node-matrix": "^1.0.0",
     "node-rtsp-stream": "0.0.9",
